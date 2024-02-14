@@ -1,6 +1,5 @@
 ---
-- name: Update Servers
-    hosts: was_servers
+- hosts: all
 
   become: true
   tasks:
