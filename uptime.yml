@@ -1,0 +1,8 @@
+- hosts: servers
+  become: false
+  gather_facts: true
+
+  tasks:
+
+  - debug:
+      msg: "Days up: {{ (ansible_facts.uptime_seconds / 86400) | int }}"
