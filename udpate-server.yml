@@ -1,9 +1,0 @@
----
-- hosts: servers
-
-  become: true
-  tasks:
-    - name: DNF Package Updater
-      dnf:
-        update_only: yes
-        update_cache: yes
