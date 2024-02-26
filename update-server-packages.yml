@@ -7,5 +7,5 @@
       dnf:
         update_only: yes
         update_cache: yes
-  - debug:
-      msg: "Days up: {{ (ansible_facts.uptime_seconds / 86400) | int }}"
+    - debug:
+        msg: "Days up: {{ (ansible_facts.uptime_seconds / 86400) | int }}"
